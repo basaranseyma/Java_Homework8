@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        double n1, n2, result = 0.0;
+        double n1, n2, result;
         int select;
 
         Scanner input = new Scanner(System.in);
@@ -34,6 +34,7 @@ public class Main {
             break;
             default:
                 System.out.println("Invalid operation selected!");
+                return;
         }
         System.out.println("Result: " + result);
     }
